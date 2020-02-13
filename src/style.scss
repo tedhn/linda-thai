@@ -1,0 +1,470 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700|Yellowtail&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  height: 100vh;
+}
+
+.container {
+  height: 100%;
+  background-color: #ffdde4;
+  color: #27496d;
+  font-family: "Ubuntu", sans-serif;
+
+  .seperator {
+    border-top: 5px solid #27496d;
+    opacity: 0.7;
+    margin-top: 5px;
+
+    &.about {
+      margin-left: 150px;
+      padding-bottom: 100px;
+      width: 150px;
+    }
+
+    &.contact {
+      grid-row: 2;
+      margin-left: 350px;
+      width: 200px;
+    }
+    &.interest {
+      margin-left: 300px;
+      grid-row: 2;
+      width: 150px;
+    }
+  }
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 0 50px 0 150px;
+  user-select: none;
+  height: 100px;
+  background-color: #ffdde4;
+  transition: background-color 0.5s ease-in-out;
+
+  &.scrolling {
+    height: 60px;
+    opacity: 0.9;
+    background-color: #ffdde4;
+    box-shadow: 0 1px #d4d4d4;
+  }
+
+  .logo {
+    font-family: "Yellowtail", cursive;
+    float: left;
+    margin-top: 20px;
+    font-size: 48px;
+    cursor: pointer;
+    transition: font-size 0.5s ease-in-out;
+
+    &.scrolling {
+      font-size: 32px;
+    }
+  }
+
+  .navlink {
+    transition: transform 0.5s ease-in-out;
+
+    .links {
+      float: right;
+      font-weight: 300;
+      opacity: 0.7;
+      font-size: 24px;
+      margin: 35px 75px;
+      cursor: pointer;
+      transition: box-shadow 0.5s ease;
+
+      &.on {
+        box-shadow: 0px 3px #27496d;
+        opacity: 1;
+      }
+    }
+
+    &.scrolling {
+      transform: translateY(-10px);
+    }
+  }
+}
+
+.home {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 100%;
+
+  .text {
+    margin: auto auto 250px 150px;
+    grid-column: 1;
+
+    .line1 {
+      margin: 10px 0;
+      font-size: 48px;
+    }
+    .line2 {
+      margin: 10px 0;
+      font-size: 72px;
+      font-weight: 300;
+
+      span {
+        font-weight: 700;
+        color: #ff8686;
+      }
+    }
+    .line3 {
+      margin: 10px 0;
+      font-size: 22px;
+      font-weight: 300;
+    }
+  }
+
+  .images {
+    grid-column: 2;
+    margin: auto auto 0 auto;
+
+    &.content {
+      height: 550px;
+      width: 650px;
+    }
+  }
+}
+
+.about {
+  background-color: #ffdde4;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 100%;
+
+  .text {
+    grid-column: 1;
+    margin: auto auto 250px 150px;
+
+    .line1 {
+      font-weight: 300;
+      font-size: 48px;
+
+      span {
+        font-weight: 700;
+        color: #ff8686;
+      }
+    }
+
+    .line2 {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 1.5;
+    }
+  }
+
+  .images {
+    grid-column: 2;
+    margin: auto auto 5px auto;
+
+    &.content {
+      height: 550px;
+      width: 650px;
+    }
+  }
+}
+
+.interest {
+  height: 100%;
+  background-color: #ffdde4;
+  display: grid;
+  grid-template-rows: 30% 10px 69%;
+
+  .text {
+    grid-row: 1;
+    font-weight: 300;
+    font-size: 48px;
+    margin: auto auto 0 150px;
+    span {
+      font-weight: 700;
+      color: #ff8686;
+    }
+  }
+  .hobbies {
+    display: grid;
+    grid-row: 3;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 300px 300px 300px;
+    margin: auto;
+
+    div {
+      height: 100px;
+      margin: auto auto 100px auto;
+      justify-content: center;
+      text-align: center;
+
+      svg {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+.contact {
+  height: 100%;
+  background-color: #ffdde4;
+  display: grid;
+  grid-template-rows: 30% 10px 69%;
+
+  .text {
+    grid-row: 1;
+    font-weight: 300;
+    font-size: 48px;
+    margin: auto auto 0 150px;
+    span {
+      font-weight: 700;
+      color: #ff8686;
+    }
+  }
+
+  .info {
+    display: grid;
+    margin: auto;
+    grid-template-columns: 300px 300px;
+
+    div {
+      height: 100px;
+      margin: auto auto 100px auto;
+      justify-content: center;
+      text-align: center;
+      font-weight: 300;
+      font-size: 18px;
+
+      svg {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    overflow: auto;
+
+    .seperator {
+      border-top: 5px solid #27496d;
+      opacity: 0.7;
+      margin-top: 5px;
+
+      &.about {
+        margin: auto;
+        height: 0;
+        padding-bottom: 50px;
+        width: 150px;
+      }
+
+      &.contact {
+        grid-row: 2;
+        margin: auto;
+        width: 200px;
+      }
+      &.interest {
+        grid-row: 2;
+        margin: auto;
+        width: 150px;
+      }
+    }
+  }
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    height: 50px;
+    width: 100%;
+    padding: 0;
+    user-select: none;
+    transition: background-color 0.5s ease-in-out;
+
+    .logo {
+      float: none;
+      margin: auto;
+      padding-left: 50px;
+      font-size: 48px;
+      cursor: pointer;
+      transition: opacity 0.5s ease-in-out;
+
+      &.scrolling {
+        font-size: 48px;
+        opacity: 0;
+      }
+    }
+
+    .links {
+      display: none;
+    }
+    &.scrolling {
+      height: 50px;
+      background-color: transparent;
+      opacity: 0.9;
+      box-shadow: none;
+    }
+  }
+
+  .home {
+    background-color: #ffdde4;
+    display: grid;
+    grid-template-columns: 0%;
+    width: 100%;
+    height: 100%;
+    grid-template-rows: 70% 30%;
+
+    .text {
+      margin: auto auto auto 50px;
+      width: 250px;
+      height: 100%;
+      grid-row: 2;
+
+      .line1 {
+        margin: 10px 0;
+        font-size: 24px;
+      }
+      .line2 {
+        margin: 10px 0;
+        font-size: 36px;
+        font-weight: 300;
+
+        span {
+          font-weight: 700;
+          color: #ff8686;
+        }
+      }
+      .line3 {
+        margin: 10px 0;
+        font-size: 12px;
+        font-weight: 300;
+      }
+    }
+
+    .images {
+      grid-row: 1;
+      margin: auto auto 10px auto;
+
+      &.content {
+        height: 300px;
+        width: 350px;
+      }
+    }
+  }
+
+  .about {
+    display: grid;
+    background-color: #ffdde4;
+    grid-template-columns: 100%;
+    width: 100%;
+    height: 100%;
+    grid-template-rows: 60% 40%;
+
+    .text {
+      grid-row: 2;
+      margin: auto;
+
+      .line1 {
+        font-weight: 300;
+        font-size: 22px;
+        padding-bottom: 10px;
+        span {
+          font-weight: 700;
+          color: #ff8686;
+        }
+      }
+
+      .line2 {
+        font-size: 12px;
+        width: 250px;
+        font-weight: 400;
+        line-height: 1.5;
+      }
+    }
+
+    .images {
+      grid-column: 1;
+      margin: auto auto 5px auto;
+
+      &.content {
+        height: 300px;
+        width: 350px;
+      }
+    }
+  }
+
+  .interest {
+    height: 100%;
+    background-color: #ffdde4;
+    display: grid;
+    grid-template-rows: 19% 10px 80%;
+
+    .text {
+      grid-row: 1;
+      font-weight: 300;
+      font-size: 22px;
+      margin: auto auto 20px auto;
+      span {
+        font-weight: 700;
+        color: #ff8686;
+      }
+    }
+    .hobbies {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 33% 33% 33%;
+      margin: auto;
+
+      div {
+        height: 50px;
+        margin: auto auto 100px auto;
+        justify-content: center;
+        text-align: center;
+
+        svg {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+
+  .contact {
+    height: 100%;
+    background-color: #ffdde4;
+    display: grid;
+    grid-template-rows: 19% 10px 70%;
+
+    .text {
+      grid-row: 1;
+      font-weight: 300;
+      font-size: 22px;
+      margin: 80px auto 50px auto;
+      span {
+        font-weight: 700;
+        color: #ff8686;
+      }
+    }
+
+    .info {
+      display: grid;
+      margin: auto;
+      grid-template-columns: 100%;
+      grid-template-rows: 33% 33% 33%;
+
+      div {
+        height: 50px;
+        margin: 100px auto 100px auto;
+        justify-content: center;
+        text-align: center;
+        font-weight: 300;
+        font-size: 18px;
+
+        svg {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
