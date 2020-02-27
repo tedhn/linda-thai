@@ -1,16 +1,14 @@
 import React from "react";
 
-import image2 from "./image2.png";
+import image2 from "./svg/image2.jpg";
 
 export default function About() {
   return (
     <div className="about">
       <div className="text">
-        <div className="line1">
-          A Little More About <span> Me</span>
-        </div>
+        <div className="line1">A Little More About Me</div>
 
-        <div className="seperator about"></div>
+        <div className="seperator"></div>
         <div className="line2">
           I'm originally from San Jose, California but have spent the most of my
           life here in Seattle. This is my last year at the University of

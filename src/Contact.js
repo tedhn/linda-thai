@@ -1,16 +1,12 @@
 import React from "react";
 
-import { ReactComponent as Email } from "./Email.svg";
-import { ReactComponent as Phone } from "./Phone.svg";
-import { ReactComponent as LinkedIn } from "./Linkedin.svg";
+import { ReactComponent as Email } from "./svg/Email.svg";
+import { ReactComponent as LinkedIn } from "./svg/Linkedin.svg";
 
 export default function Contact() {
   return (
     <div className="contact">
-      <div className="text">
-        Want to know more? <span>Contact</span> Me
-      </div>
-      <div className="seperator contact"></div>
+      <div className="text">Want to know more? Contact Me</div>
       <div className="info">
         <div>
           <Email />

@@ -5,107 +5,89 @@ import About from "./About";
 import Interest from "./Interest";
 import Contact from "./Contact";
 
-import jump from "jump.js";
+import { ReactComponent as Loading } from "./svg/loading.svg";
+import { ReactComponent as Arrow } from "./svg/arrow.svg";
+
+import { NavLink, Route, Switch, __RouterContext } from "react-router-dom";
 
 export default function App() {
-  const [toggleLink1, settoggleLink1] = useState(false);
-  const [toggleLink2, settoggleLink2] = useState(false);
-  const [toggleLink3, settoggleLink3] = useState(false);
-  const [togglenav, settogglenav] = useState(false);
+  const [loading, setLoading] = useState(true);
+  const [remove, setRemove] = useState("preloader loaded");
 
-  const jumpAbout = () => {
-    jump(".about", {
-      duration: 1000
-    });
-  };
+  window.addEventListener("load", () => {
+    setLoading(false);
 
-  const jumpHome = () => {
-    jump(".home", {
-      duration: 1000
-    });
-  };
-  const jumpInterest = () => {
-    jump(".interest", {
-      duration: 1000
-    });
-  };
-  const jumpContact = () => {
-    jump(".contact", {
-      duration: 1000
-    });
-  };
-
-  window.addEventListener("scroll", () => {
-    if (window.scrollY === 0) {
-      settogglenav(false);
-    } else {
-      settogglenav(true);
-    }
+    setTimeout(() => {
+      setRemove("preloader loaded removed");
+    }, 4000);
   });
 
-  window.addEventListener("touchmove", e => {
-    settogglenav(true);
-  });
-
-  window.addEventListener("touchend", () => {
-    settogglenav(false);
-  });
+  //finish nav for mobile //
 
   return (
     <div className="container">
-      <nav className={togglenav ? "navbar scrolling" : "navbar"}>
-        <span
-          className={togglenav ? "logo scrolling" : "logo"}
-          onClick={jumpHome}
-        >
-          LT
+      <div className={loading ? "preloader" : remove}>
+        <Loading />
+      </div>
+
+      <nav className="navbar">
+        <span>
+          <NavLink className={"logo"} exact to={process.env.PUBLIC_URL + "/"}>
+            Lindah Thai
+          </NavLink>
         </span>
-        <div className={togglenav ? "navlink scrolling" : "navlink"}>
-          <span
-            onClick={jumpContact}
-            className={
-              toggleLink3 ? "links on" : togglenav ? "links scrolling" : "links"
-            }
-            onMouseEnter={() => {
-              settoggleLink3(true);
-            }}
-            onMouseLeave={() => {
-              settoggleLink3(false);
-            }}
-          >
-            Contact
+        <div className={"navlink"}>
+          <span>
+            <NavLink
+              className="links"
+              activeClassName="links active"
+              exact
+              to={process.env.PUBLIC_URL + "/Contact"}
+            >
+              Contact
+            </NavLink>
           </span>
-          <span
-            onClick={jumpInterest}
-            className={toggleLink2 ? "links on" : "links"}
-            onMouseEnter={() => {
-              settoggleLink2(true);
-            }}
-            onMouseLeave={() => {
-              settoggleLink2(false);
-            }}
-          >
-            Interest
+          <span>
+            <NavLink
+              className="links"
+              activeClassName="links active"
+              exact
+              to={process.env.PUBLIC_URL + "/Interest"}
+            >
+              Interest
+            </NavLink>
           </span>
-          <span
-            onClick={jumpAbout}
-            className={toggleLink1 ? "links on" : "links"}
-            onMouseEnter={() => {
-              settoggleLink1(true);
-            }}
-            onMouseLeave={() => {
-              settoggleLink1(false);
-            }}
-          >
-            About
+          <span>
+            <NavLink
+              className="links"
+              activeClassName="links active"
+              exact
+              to={process.env.PUBLIC_URL + "/About"}
+            >
+              About
+            </NavLink>
           </span>
         </div>
       </nav>
 
-      <Home />
-      <About />
-      <Interest />
-      <Contact />
+      <div className="mobile">
+        <Arrow />
+      </div>
+
+      <Switch>
+        <Route exact path={process.env.PUBLIC_URL + "/"}>
+          <Home />
+        </Route>
+        <Route exact path={process.env.PUBLIC_URL + "/About"}>
+          <About />
+        </Route>
+        <Route exact path={process.env.PUBLIC_URL + "/Interest"}>
+          <Interest />
+        </Route>
+        <Route exact path={process.env.PUBLIC_URL + "/Contact"}>
+          <Contact />
+        </Route>
+      </Switch>
     </div>
   );
 }
