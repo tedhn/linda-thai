@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/linda-thai/static/css/main.67eb5763.chunk.css",
-    "main.js": "/linda-thai/static/js/main.ddc5d6cb.chunk.js",
-    "main.js.map": "/linda-thai/static/js/main.ddc5d6cb.chunk.js.map",
+    "main.css": "/linda-thai/static/css/main.8e89b088.chunk.css",
+    "main.js": "/linda-thai/static/js/main.05cf4bf3.chunk.js",
+    "main.js.map": "/linda-thai/static/js/main.05cf4bf3.chunk.js.map",
     "runtime-main.js": "/linda-thai/static/js/runtime-main.e2bbf359.js",
     "runtime-main.js.map": "/linda-thai/static/js/runtime-main.e2bbf359.js.map",
-    "static/js/2.b826f63a.chunk.js": "/linda-thai/static/js/2.b826f63a.chunk.js",
-    "static/js/2.b826f63a.chunk.js.map": "/linda-thai/static/js/2.b826f63a.chunk.js.map",
+    "static/js/2.ef6447ca.chunk.js": "/linda-thai/static/js/2.ef6447ca.chunk.js",
+    "static/js/2.ef6447ca.chunk.js.map": "/linda-thai/static/js/2.ef6447ca.chunk.js.map",
     "index.html": "/linda-thai/index.html",
-    "precache-manifest.7457e3799d281241b8de2736ed85a9bb.js": "/linda-thai/precache-manifest.7457e3799d281241b8de2736ed85a9bb.js",
+    "precache-manifest.8b49eabe97cd40d1787401feede4e097.js": "/linda-thai/precache-manifest.8b49eabe97cd40d1787401feede4e097.js",
     "service-worker.js": "/linda-thai/service-worker.js",
-    "static/css/main.67eb5763.chunk.css.map": "/linda-thai/static/css/main.67eb5763.chunk.css.map",
-    "static/js/2.b826f63a.chunk.js.LICENSE.txt": "/linda-thai/static/js/2.b826f63a.chunk.js.LICENSE.txt",
+    "static/css/main.8e89b088.chunk.css.map": "/linda-thai/static/css/main.8e89b088.chunk.css.map",
+    "static/js/2.ef6447ca.chunk.js.LICENSE.txt": "/linda-thai/static/js/2.ef6447ca.chunk.js.LICENSE.txt",
     "static/media/Cooking.aa828cd4.svg": "/linda-thai/static/media/Cooking.aa828cd4.svg",
     "static/media/Email.a4ac8abc.svg": "/linda-thai/static/media/Email.a4ac8abc.svg",
     "static/media/Food.39de6098.svg": "/linda-thai/static/media/Food.39de6098.svg",
@@ -19,15 +19,17 @@
     "static/media/Linkedin.18066f9f.svg": "/linda-thai/static/media/Linkedin.18066f9f.svg",
     "static/media/Music.bf62cac5.svg": "/linda-thai/static/media/Music.bf62cac5.svg",
     "static/media/Pets.3a3e6d88.svg": "/linda-thai/static/media/Pets.3a3e6d88.svg",
-    "static/media/Phone.152d6194.svg": "/linda-thai/static/media/Phone.152d6194.svg",
     "static/media/Travel.25b0082a.svg": "/linda-thai/static/media/Travel.25b0082a.svg",
-    "static/media/image1.png": "/linda-thai/static/media/image1.398408fd.png",
-    "static/media/image2.png": "/linda-thai/static/media/image2.e1d3ac61.png"
+    "static/media/arrow.878815bc.svg": "/linda-thai/static/media/arrow.878815bc.svg",
+    "static/media/style.scss": "/linda-thai/static/media/background.96000dd7.svg",
+    "static/media/image1.jpg": "/linda-thai/static/media/image1.043719b0.jpg",
+    "static/media/image2.jpg": "/linda-thai/static/media/image2.06f5dcf1.jpg",
+    "static/media/loading.dc0eeb7a.svg": "/linda-thai/static/media/loading.dc0eeb7a.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.e2bbf359.js",
-    "static/js/2.b826f63a.chunk.js",
-    "static/css/main.67eb5763.chunk.css",
-    "static/js/main.ddc5d6cb.chunk.js"
+    "static/js/2.ef6447ca.chunk.js",
+    "static/css/main.8e89b088.chunk.css",
+    "static/js/main.05cf4bf3.chunk.js"
   ]
 }
