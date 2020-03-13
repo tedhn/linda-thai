@@ -1,27 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "70c86ad29c03482c907d969171fa523b",
+    "revision": "aaf509feb2e8e6755abd04b569095341",
     "url": "/linda-thai/index.html"
   },
   {
-    "revision": "3bc811e6fc7be4d1664a",
-    "url": "/linda-thai/static/css/main.8e89b088.chunk.css"
+    "revision": "8eb0c3272588b40eaaa1",
+    "url": "/linda-thai/static/css/main.116ddda8.chunk.css"
   },
   {
-    "revision": "7612200a5a2cc1ac1cf2",
-    "url": "/linda-thai/static/js/2.ef6447ca.chunk.js"
+    "revision": "81e3758382c33921f2fe",
+    "url": "/linda-thai/static/js/2.266b8509.chunk.js"
   },
   {
     "revision": "928d7b5eb39d16fe9a880722c974b51e",
-    "url": "/linda-thai/static/js/2.ef6447ca.chunk.js.LICENSE.txt"
+    "url": "/linda-thai/static/js/2.266b8509.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "3bc811e6fc7be4d1664a",
-    "url": "/linda-thai/static/js/main.05cf4bf3.chunk.js"
+    "revision": "8eb0c3272588b40eaaa1",
+    "url": "/linda-thai/static/js/main.f6c2e263.chunk.js"
   },
   {
     "revision": "29a7c01a57522dc48762",
     "url": "/linda-thai/static/js/runtime-main.e2bbf359.js"
+  },
+  {
+    "revision": "21ab39e14c0b92e782a7dec1fcca73a2",
+    "url": "/linda-thai/static/media/About.21ab39e1.svg"
   },
   {
     "revision": "aa828cd45d79ac55ef2477525cddf2ea",
@@ -40,6 +44,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/linda-thai/static/media/Gaming.993e0f1e.svg"
   },
   {
+    "revision": "342086d7dabebaab03b5d4c459f1573c",
+    "url": "/linda-thai/static/media/Hobbies.342086d7.svg"
+  },
+  {
+    "revision": "f92a85cf48181d629c37a4391475dfbc",
+    "url": "/linda-thai/static/media/Interest.f92a85cf.svg"
+  },
+  {
     "revision": "18066f9f4b2c53a320d9f97316025bc8",
     "url": "/linda-thai/static/media/Linkedin.18066f9f.svg"
   },
@@ -56,12 +68,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/linda-thai/static/media/Travel.25b0082a.svg"
   },
   {
-    "revision": "878815bc6f977e274f878cf746c00db4",
-    "url": "/linda-thai/static/media/arrow.878815bc.svg"
-  },
-  {
     "revision": "96000dd707686f18cd30b7b5b4266297",
     "url": "/linda-thai/static/media/background.96000dd7.svg"
+  },
+  {
+    "revision": "c34cc2a824c5def6456c6560a150ce87",
+    "url": "/linda-thai/static/media/home.c34cc2a8.svg"
   },
   {
     "revision": "043719b0d438cf25cb80742f342982b1",

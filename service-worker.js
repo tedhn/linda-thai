@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/linda-thai/precache-manifest.8b49eabe97cd40d1787401feede4e097.js"
+  "/linda-thai/precache-manifest.a3c044e465d3c54e4a3b32cfc4130636.js"
 );
 
 self.addEventListener('message', (event) => {
