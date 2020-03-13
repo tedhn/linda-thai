@@ -98,12 +98,15 @@
   height: 100vh;
 }
 
+body {
+  overflow: hidden;
+}
+
 .container {
   height: 100%;
   width: 100%;
   color: #424874;
   font-family: "Ubuntu", sans-serif;
-  overflow: hidden;
 }
 
 @media only screen and (min-width: 600px) {
