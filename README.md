@@ -7,3 +7,5 @@
 #### 3/13/2020 : compatiable for mobile devices
 
 #### 3/13/2020 : added navigation bar
+
+#### 3/13/2020 : fixed some visual errors
