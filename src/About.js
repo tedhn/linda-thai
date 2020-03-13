@@ -19,7 +19,11 @@ export default function About() {
       </div>
 
       <div className="images">
-        <img src={image2} className="images content"></img>
+        <img
+          src={image2}
+          alt="404 image not found"
+          className="images content"
+        ></img>
       </div>
     </div>
   );

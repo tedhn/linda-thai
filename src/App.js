@@ -4,11 +4,11 @@ import Home from "./Home";
 import About from "./About";
 import Interest from "./Interest";
 import Contact from "./Contact";
+import Navbar from "./navbar";
 
 import { ReactComponent as Loading } from "./svg/loading.svg";
-import { ReactComponent as Arrow } from "./svg/arrow.svg";
 
-import { NavLink, Route, Switch, __RouterContext } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 
 export default function App() {
   const [loading, setLoading] = useState(true);
@@ -30,49 +30,7 @@ export default function App() {
         <Loading />
       </div>
 
-      <nav className="navbar">
-        <span>
-          <NavLink className={"logo"} exact to={process.env.PUBLIC_URL + "/"}>
-            Lindah Thai
-          </NavLink>
-        </span>
-        <div className={"navlink"}>
-          <span>
-            <NavLink
-              className="links"
-              activeClassName="links active"
-              exact
-              to={process.env.PUBLIC_URL + "/Contact"}
-            >
-              Contact
-            </NavLink>
-          </span>
-          <span>
-            <NavLink
-              className="links"
-              activeClassName="links active"
-              exact
-              to={process.env.PUBLIC_URL + "/Interest"}
-            >
-              Interest
-            </NavLink>
-          </span>
-          <span>
-            <NavLink
-              className="links"
-              activeClassName="links active"
-              exact
-              to={process.env.PUBLIC_URL + "/About"}
-            >
-              About
-            </NavLink>
-          </span>
-        </div>
-      </nav>
-
-      <div className="mobile">
-        <Arrow />
-      </div>
+      <Navbar />
 
       <Switch>
         <Route exact path={process.env.PUBLIC_URL + "/"}>

@@ -12,7 +12,11 @@ export default function Home() {
       </div>
 
       <div className="images">
-        <img src={image1} className="images content"></img>
+        <img
+          src={image1}
+          alt="404 image not found"
+          className="images content"
+        ></img>
       </div>
     </div>
   );
