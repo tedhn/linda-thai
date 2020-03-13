@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/linda-thai/static/css/main.116ddda8.chunk.css",
+    "main.css": "/linda-thai/static/css/main.24c6ead7.chunk.css",
     "main.js": "/linda-thai/static/js/main.f6c2e263.chunk.js",
     "main.js.map": "/linda-thai/static/js/main.f6c2e263.chunk.js.map",
     "runtime-main.js": "/linda-thai/static/js/runtime-main.e2bbf359.js",
@@ -8,9 +8,9 @@
     "static/js/2.266b8509.chunk.js": "/linda-thai/static/js/2.266b8509.chunk.js",
     "static/js/2.266b8509.chunk.js.map": "/linda-thai/static/js/2.266b8509.chunk.js.map",
     "index.html": "/linda-thai/index.html",
-    "precache-manifest.a3c044e465d3c54e4a3b32cfc4130636.js": "/linda-thai/precache-manifest.a3c044e465d3c54e4a3b32cfc4130636.js",
+    "precache-manifest.e289b86eaf779d5dd8897f08d129ed4b.js": "/linda-thai/precache-manifest.e289b86eaf779d5dd8897f08d129ed4b.js",
     "service-worker.js": "/linda-thai/service-worker.js",
-    "static/css/main.116ddda8.chunk.css.map": "/linda-thai/static/css/main.116ddda8.chunk.css.map",
+    "static/css/main.24c6ead7.chunk.css.map": "/linda-thai/static/css/main.24c6ead7.chunk.css.map",
     "static/js/2.266b8509.chunk.js.LICENSE.txt": "/linda-thai/static/js/2.266b8509.chunk.js.LICENSE.txt",
     "static/media/About.21ab39e1.svg": "/linda-thai/static/media/About.21ab39e1.svg",
     "static/media/Cooking.aa828cd4.svg": "/linda-thai/static/media/Cooking.aa828cd4.svg",
@@ -32,7 +32,7 @@
   "entrypoints": [
     "static/js/runtime-main.e2bbf359.js",
     "static/js/2.266b8509.chunk.js",
-    "static/css/main.116ddda8.chunk.css",
+    "static/css/main.24c6ead7.chunk.css",
     "static/js/main.f6c2e263.chunk.js"
   ]
 }
